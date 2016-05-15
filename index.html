@@ -11,9 +11,10 @@ v1.0
 <html>
 
 <head>
-    <!-- Fonts in use -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Great+Vibes' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=GFS+Didot&subset=greek' rel='stylesheet' type='text/css'>
+    <!-- Fonts in use, GFS Didot replaced with Playfair -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,600italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
 
     <!--Standard head items-->
     <meta charset="UTF-8">
@@ -39,22 +40,50 @@ v1.0
   <!-- Banner Image & Titles -->
   <header>
     <section class="banner_flex">
-      <img src="../HackerYou P02/img/banner/genuine.png" alt="genuine title" class="banner_genuine"/>
-      <img src="../HackerYou P02/img/banner/foodpassion.png" alt="food passion" class="banner_passion"/>
-      <img src="../HackerYou P02/img/banner/cookingsince.png" alt= "cooking since" class="banner_cooking" />
+      <img src="img/banner/genuine.png" alt="genuine title" class="banner_genuine"/>
+      <img src="img/banner/foodpassion.png" alt="food passion" class="banner_passion"/>
+      <img src="img/banner/cookingsince.png" alt= "cooking since" class="banner_cooking" />
       <a href="#"><div class="button">
-          <img src="../HackerYou P02/img/banner/eye.png" alt="eye" />
+          <img src="img/banner/eye.png" alt="eye" />
           <p>View Details</p>
       </div></a>
     </section>
   </header>
 
 <section id="chefs">
-  <section class="chefs_about">
-    <h1 class="contrast">About</h1><h1>Our Chefs</h1> 
-  </section>
-  <div class="chefs_image"></div>
+    <div class="chefs_about">
+      <div class="chefs_about_items">
+        <!-- Title "About Our Chefs -->
+        <h1><span class="contrast">About</span> Our Chefs</h1>
+
+        <!-- Pairing thumb with text, same row -->
+        <div class="chefs_thumb">
+            <div class="thumbnail"></div> <!-- thumbnail image stored in CSS as opposed to HTML -->
+            <div class="chefs_thumb_display">
+              <h3>Gustave Berneir</h3>
+              <h5 class="contrast">Executive Chef</h5>
+            </div>
+        </div>
+
+        <!-- Body Text, Chefs -->
+        <h4>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</h4>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum
+          tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus
+          molestie. Curabitur pellentesque massa eu nulla consequat sed porttitor arcu porttitor.</p>
+
+        <p >Quisque volutpat pharetra felis, eu cursus lorem molestie vitae. Nulla vehicula, lacus</p>
+      </div>
+    </div>
+
+    <!-- left side Chef Img -->
+    <div class="chefs_image"></div>
+
 </section>
+
+<!--
+
+-->
 
     <!--Generic Header panel
      <header>
