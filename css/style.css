@@ -158,66 +158,129 @@ header {
 }
 
 /* About Our Chefs Section */
-  #chefs {
-    width: 100%;
-    height: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+      #chefs {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
 
-  .chefs_about { /* Right Side Content Container */
-    width: 50%;
-    height: 100%;
-    background-color: rgba(234,229,214,1);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+      .chefs_about { /* Right Side Content Container */
+        width: 50%;
+        height: 100%;
+        background-color: rgba(234,229,214,1);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
 
-  }
-  .chefs_about_items { /* items within content container */
-    width: 580px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+      }
+      .chefs_about_items { /* items within content container */
+        width: 580px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
 
-  .chefs_image { /* Left Side Banner Image */
-    width: 50%;
-    height: 100%;
-    background: url(../img/chefs/chef1.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  .thumbnail {
-    width: 100px;
-    height: 100px;
-    background: url(../img/chefs/chef1_thumb.png) no-repeat center center;
-    background-size: 100px 100px;
-    border-radius: 50%;
-  }
+      .chefs_image { /* Left Side Banner Image */
+        width: 50%;
+        height: 100%;
+        background: url(../img/chefs/chef1.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
 
-  .byline {
-    color: rgba(11,43,51,1);
-    font-size: 18px;
-  }
-  .chefs_thumb {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .chefs_thumb_display {
-    margin-left: 20px;
-  }
+      .byline {
+        color: rgba(11,43,51,1);
+        font-size: 18px;
+      }
+      .chefs_thumb {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .chefs_thumb_display {
+        margin-left: 20px;
+      }
 
 
-/*  */
+/* Gallery Section */
+      #gallery {
+        width: 100%;
+        height: 940px;
+        background-color: rgba(35,41,44,1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* justify-content means horizontal axis*/
+        align-items: center;
+      }
+      #gallery_header { /* top section; navigation & display */
+        width: 1160px;
+        height: 390px;
+        background-color: rgba(35,41,44,1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* justify-content means horizontal axis*/
+        align-items: center;
+      }
+      #gallery_header h4,
+      #gallery_header h1 {
+        color: rgba(234,229,214,1);
+        margin-bottom: 20px;
+      }
+      /* Gallery Navigation pane */
+      #gallery_nav {
+          width: 450px;
+          height: 36px;
+          border: 2px solid rgba(115,132,142,1);
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+      }
+      #gallery_nav ul {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+      }
+      #gallery_nav ul a {
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+        font-size: 14px;
+        color: rgba(234,229,214,1);
+      }
+
+      /* Project Gallery */
+      #gallery_projects {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        -webkit-display: flex;
+
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: center;
+      }
+      .gallery_item {
+        width: 20%;
+        height: 50%;
+
+      }
+      @media (max-width: 608px) {
+
+      }
