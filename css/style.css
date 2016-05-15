@@ -195,13 +195,6 @@ header {
     -o-background-size: cover;
     background-size: cover;
   }
-  .thumbnail {
-    width: 100px;
-    height: 100px;
-    background: url(../img/chefs/chef1_thumb.png) no-repeat center center;
-    background-size: 100px 100px;
-    border-radius: 50%;
-  }
 
   .byline {
     color: rgba(11,43,51,1);
