@@ -17,76 +17,65 @@ Style Guide:
 
 */
 
-/* */
-
 @charset "UTF-8";
 
 /* Page Elements */
 /* border-box Stack -- Prevents universal selector overrides */
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/*
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
-*/
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      html {
+        min-width: 1160px;
+        margin: -10px; /* necessary? */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 60px;
+        margin: 0px;
+      }
+      h3 {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0px;
+      }
+      h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        line-height: 1.5em;
+        letter-spacing: .04em;
+        font-style: italic;
+        color: rgba(11,43,51,1);
+        margin: 0px;
+      }
+      h5 { /* captions */
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: .04em;
+        font-size: 14px;
+        margin: 0px;
+      }
+      p {
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: .04em;
+        font-size: 16px;
+        line-height: 1.5em;
+        color: rgba(115,132,142,1);
+        margin-bottom: 10px;
 
-html {
-  min-width: 1160px; /* Verify this ## */
-  margin: -10px;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 60px;
-  margin: 0px;
-}
-h3 {
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  margin: 0px;
-}
-h4 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  line-height: 1.5em;
-  letter-spacing: .04em;
-  font-style: italic;
-  color: rgba(11,43,51,1);
-  margin: 0px;
-}
-h5 { /* captions */
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: .04em;
-  font-size: 14px;
-  margin: 0px;
-}
-p {
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: .04em;
-  font-size: 16px;
-  line-height: 1.5em;
-  color: rgba(115,132,142,1);
-  margin-bottom: 10px;
-
-}
-
-.contrast {
-  color: rgba(225,86,14,1);
-}
+      }
+      .contrast {
+        color: rgba(225,86,14,1);
+      }
 
 /* Universal Elements */
-
       .button {
         width: 260px;
         height: 75px;
@@ -119,7 +108,6 @@ p {
         height: 80px;
         margin-top: 75px;
       }
-
       .button p {
         padding-left: 14px;
         font-family: 'Open Sans', sans-serif;
@@ -127,36 +115,30 @@ p {
         font-weight: 600;
         text-transform: uppercase;
       }
-
-
 /* Banner Section */
-header {
-    width: 100%;
-    height: 1080px;
-    background: url(../img/banner/banner_.jpeg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner_flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.banner_passion { padding-top: 48px; }
-.banner_cooking {
-  padding-top: 4px;
-
-}
-
+      header {
+          width: 100%;
+          height: 1080px;
+          background: url(../img/banner/banner_.jpeg) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      .banner_flex {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+      }
+      .banner_passion { padding-top: 48px; }
+      .banner_cooking {
+        padding-top: 4px;
+      }
 /* About Our Chefs Section */
       #chefs {
         width: 100%;
@@ -166,7 +148,6 @@ header {
         justify-content: flex-start;
         align-items: flex-start;
       }
-
       .chefs_about { /* Right Side Content Container */
         width: 50%;
         height: 100%;
@@ -175,7 +156,6 @@ header {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-
       }
       .chefs_about_items { /* items within content container */
         width: 580px;
@@ -185,7 +165,6 @@ header {
         justify-content: flex-start;
         align-items: flex-start;
       }
-
       .chefs_image { /* Left Side Banner Image */
         width: 50%;
         height: 100%;
@@ -195,7 +174,6 @@ header {
         -o-background-size: cover;
         background-size: cover;
       }
-
       .byline {
         color: rgba(11,43,51,1);
         font-size: 18px;
@@ -229,7 +207,8 @@ header {
         background-color: rgba(35,41,44,1);
         display: flex;
         flex-direction: column;
-        justify-content: center; /* justify-content means horizontal axis*/
+        /* center horizontally, vertically */
+        justify-content: center;
         align-items: center;
       }
       #gallery_header h4,
@@ -254,7 +233,6 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
       }
       #gallery_nav ul a {
         text-decoration: none;
@@ -275,12 +253,141 @@ header {
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
         justify-content: center;
+        align-content: flex-start;
       }
       .gallery_item {
         width: 20%;
         height: 50%;
+      }
+
+/* Our Services Section */
+      #services {
+        width: 100%;
+        height: 710px;
+        background-color: rgba(234,229,214,1);
+        display: flex;
+        flex-direction: column;
+        /* center horizontally, vertically */
+        justify-content: center;
+        align-items: center;
+      }
+      #services_display {
+        width: 1160px;
+        height: 305px;
+        /* margin-top: 20px;*/
+        display: flex;
+        flex-direction: column;
+        /* center horizontally, vertically */
+        justify-content: center;
+        align-items: center;
+      }
+      #services_items {
+        width: 1160px;
+        height: 405px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .services_items_meals {
+        width: 25%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      .services_img { margin-bottom: 30px; }
+      .services_img_custom { margin-bottom: 30px; margin-top: 10px; }
+      .services_h3 { margin-bottom: 10px; }
+      .services_h4 { margin-top: 25px; }
+
+/* Our Breakfast Section */
+      .parallax {
+        height: 980px;
+        background: url(../img/menu/interior.jpg) repeat fixed 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .parallax-menu {
+        width: 1160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
       }
-      @media (max-width: 608px) {
+      .parallax-menu-items { /* contains menu items */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+        flex-wrap: wrap;
+      }
+      .parallax-menu-items-list { /* individual items */
+        width: 500px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        align-content: flex-end;
+      }
 
+      .leader { /* contains caption & leader dots */
+        width: 500px;
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+      .leader-dots {
+        width: 250px;
+        border-bottom: 1px dotted #fff;
+      }
+
+      .menu-h3 {
+        font-size: 18px;
+        color: rgba(234,229,214,1);
+      }
+      .menu-h4 {
+        font-size: 12px;
+        color: rgba(234,229,214,1);
+      }
+      .parallax h1 { color: rgba(234,229,214,1); }
+
+/* Contact Us Section */
+      #contact {
+        width: 100%;
+        height: 750px;
+        position: relative;
+      }
+      .contact-parallax {
+        width: 100%;
+        height: 355px;
+        background: url(../img/contact/map.png) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      .contact-bkgd {
+        width: 100%;
+        height: 395px;
+        background-color: rgba(35,41,44,1);
+      }
+      .dummy-element {
+        width: 570;
+        height: 470;
+        position: absolute;
+        left: 50%;
+        z-index: 10;
       }
