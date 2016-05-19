@@ -22,6 +22,7 @@ v1.0
 
     <!--CSS Stylesheet calls-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css">
 
     <!-- Sample Meta Tags -->
     <meta name="theme-color" content="#34495e">
@@ -33,7 +34,32 @@ v1.0
     <!--FavIcon 16x16-->
     <link rel="favIcon" href="img/favicon-01.png">
 
+    <!-- Jquery Enabler -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
 </head>
+
+<!-- adjust #animatedElement with id/class of element to animate -->
+<!-- replace slideUp with the animation class -->
+<!-- 400 represents the activation range from top of screen -->
+<script>
+	$(window).scroll(function() {
+		$('#coffee').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+200) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
+
+<script>
+	$('#coffee').click(function() {
+		$(this).addClass("slideUp");
+	});
+</script>
 
 <body>
 
@@ -156,10 +182,16 @@ v1.0
     Nam molestie sem eu quam fermentum a tempus nisi aliquet.</h4>
   </section>
 
+<!-- Steps for Animations
+1/ add class to div
+2/ (entrance animations: set visibility to hidden in CSS)
+3/ scroll effects require jscript
+
+-->
   <!-- Our Services Menu Items -->
   <section id="services_items">
     <div class="services_items_meals">
-      <img src="img/services/coffee.png" alt="breakfast" height="100" width="100"/ class="services_img">
+      <div id="coffee" class="slideUp"><img src="img/services/coffee.png" alt="breakfast" height="100" width="100"/ class="services_img"></div>
       <h3 class="services_h3">Breakfast</h3>
       <p>Lorem ipsum dolor sit amet, tetur piscing elit. Suspendisse smod congue bibendum.</p>
     </div>
@@ -196,8 +228,12 @@ v1.0
     <div class="parallax-menu"><!-- wrapper -->
       <!-- #1 --><div class="parallax-menu-items">
         <h3>Soft-Boiled Organic Egg</h3>
-        <h4>with 'soldiers'...............................................5.00</h4>
+        <!-- <h4>with 'soldiers'...............................................5.00</h4> -->
+        <h4 class="fancy"><span>with 'soldiers'</span></h4>
       </div>
+
+
+
       <!-- #2 --><div class="parallax-menu-items">
         <h3>Soft-Boiled Organic Egg</h3>
         <h4>with 'soldiers'...............................................5.00</h4>
