@@ -3,7 +3,6 @@
 HackerYou Project 02: Restaurant
 Justin White
 May 12, 2016
-v1.0
 
 -->
 
@@ -22,6 +21,7 @@ v1.0
 
     <!--CSS Stylesheet calls-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 
     <!-- Sample Meta Tags -->
     <meta name="theme-color" content="#34495e">
@@ -44,7 +44,7 @@ v1.0
     <section id="navigation_panel">
         <!-- Logo -->
         <div class="logo">
-          <img src="img/banner/logo.png" alt="logo" height="115" width="140" />
+          <img src="img/banner/logo.png" alt="logo" height="100" width="120" />
         </div>
 
         <!-- menu navigation -->
@@ -62,33 +62,31 @@ v1.0
         <!-- Twitter -->
         <div class="twitter">
           <img src="img/banner/twitter.png" alt="twitter" height="24" width="30"/>
-          <p>
-            <span class="contrast">@louisdesign</span> Check out Marine Theme <span class="contrast-2">http://themeforest.net/user/ louisdesign/portfolio</span>
-<h5>12 minutes ago</h5>
-          </p>
+          <p><span class="contrast">@louisdesign</span> Check out Marine Theme <span class="contrast-2">http://themeforest.net/user/louisdesign/portfolio</span><h5>12 minutes ago</h5></p>
         </div>
 
         <!-- Social Media Icons -->
         <div id="social_media">
-          <img src="img/contact/soc_icons.png" alt="social-media" height="15" width="150" class="social-media-margin" />
+          <img src="img/contact/soc_icons.png" alt="social-media" height="12" width="120" class="social-media-margin" />
           <p>&copy; 2015 The Gourmet. All Rights Reserved</p>
         </div>
-  </section>
+      </section>
 
-      <!-- Banner Image & Titles -->
-      <div class="banner_flex">
-        <img src="img/banner/genuine.png" alt="genuine title" class="banner_genuine"/>
-        <img src="img/banner/foodpassion.png" alt="food passion" class="banner_passion"/>
-        <img src="img/banner/cookingsince.png" alt= "cooking since" class="banner_cooking" />
+  <!-- Banner Image & Titles -->
+      <div id="banner-flex">
+        <img src="img/banner/genuine.png" alt="genuine title" height="50" width="245"/>
+        <img src="img/banner/foodpassion.png" alt="food passion" height="135" width="648" class="passion"/>
+        <img src="img/banner/cookingsince.png" alt= "cooking since" height="76" width="367"/>
       </div>
 
-      <div class="banner_margin">
-        <!-- Universal View Details Button -->
+      <div>
+<!-- Button: View Details -->
         <a href="#parallax"><div class="button">
-            <img src="img/banner/eye.png" alt="eye" />
+            <img src="img/banner/eye.png" alt="eye" width="25" height="20"/>
             <p>View Details</p>
         </div></a>
       </div>
+
   </section>
 </header>
 
@@ -128,11 +126,11 @@ v1.0
             <p >Quisque volutpat pharetra felis, eu cursus lorem molestie vitae. Nulla vehicula, lacus</p>
           </div>
 
-          <!-- Arrow Keys -->
-          <div class="chefs_arrows">
-            <img src="img/chefs/arrow-keys_left.png" alt="left" height="30" width="30" />
-            <img src="img/chefs/arrow-keys_right.png" alt="right" height="30" width="30"  />
-          </div>
+      <!-- Arrow Keys -->
+      <div class="arrows">
+        <a href="#chefs"><div class="left"></div></a>
+        <a href="#chefs"><div class="right"></div></a>
+      </div>
 
       </div>
     </div>
@@ -151,56 +149,56 @@ v1.0
         Nam molestie sem eu quam fermentum a tempus nisi aliquet.</h4>
     <div id="gallery_nav">
         <ul>
-            <li><a href="default">All</a></li>
-            <li><a href="default">Meat</a></li>
-            <li><a href="default">Fish</a></li>
-            <li><a href="default">Dessert</a></li>
-            <li><a href="default">Vegetarian</a></li>
+            <li><a href="#gallery">All</a></li>
+            <li><a href="#gallery">Meat</a></li>
+            <li><a href="#gallery">Fish</a></li>
+            <li><a href="#gallery">Dessert</a></li>
+            <li><a href="#gallery">Vegetarian</a></li>
         </ul>
     </div>
   </section>
 
   <!-- Gallery section containing project images -->
   <section id="gallery_projects">
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food1.jpg" alt="food2"/>
       <div class="overlay"><h3>Spanish Arroz Rojo</h3><h5>Lorem Ipsum</h5></div>
     </a>
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food2.jpg" alt="food2"/>
       <div class="overlay"><h3>Butter Croissants</h3><h5>Lorem Ipsum</h5></div>
     </a>
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food3.jpg" alt="food3"/>
-      <div class="overlay"><h3>Dessert Tower of Power</h3><h5>Lorem Ipsum</h5></div>
+      <div class="overlay"><h3>Dessert Tower</h3><h5>Lorem Ipsum</h5></div>
     </a>
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food4.jpg" alt="food4"/>
       <div class="overlay"><h3>Pizza &amp; Arugula Salad </h3><h5>Lorem Ipsum</h5></div>
     </a>
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food5.jpg" alt="food5"/>
       <div class="overlay"><h3>Sandwich Board</h3><h5>Lorem Ipsum</h5></div>
     </a>
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food6.jpg" alt="food6"/>
-      <div class="overlay"><h3>Don't Overdo it Now</h3><h5>Lorem Ipsum</h5></div>
+      <div class="overlay"><h3>Smoked Salmon Sandwich</h3><h5>Lorem Ipsum</h5></div>
     </a>
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food7.jpg" alt="food7"/>
       <div class="overlay"><h3>Cappuccino Art</h3><h5>Lorem Ipsum</h5></div>
     </a>
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food8.jpg" alt="food8"/>
       <div class="overlay"><h3>Ice Cream Cone Sunsets</h3><h5>Lorem Ipsum</h5></div>
     </a>
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food9.jpg" alt="food9"/>
       <div class="overlay"><h3>Waffles Drowning in Syrup</h3><h5>Lorem Ipsum</h5></div>
     </a>
-    <a href="#">
+    <a href="#gallery">
       <img src="img/gallery/food10.jpg" alt="food10"/>
-      <div class="overlay"><h3>All the Citrus you can Handle</h3><br /><h5>Lorem Ipsum</h5></div>
+      <div class="overlay"><h3>Variety of Citrus Fruits</h3><br /><h5>Lorem Ipsum</h5></div>
     </a>
   </section>
 </section>
@@ -210,7 +208,7 @@ v1.0
   <!-- Our Services Display Content -->
   <section id="services_display">
     <h1><span class="contrast">Our</span> Services</h1>
-    <h4 class="services_h4">Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu vel diam auctor. condimentum.
+    <h4>Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu vel diam auctor. condimentum.
     Nam molestie sem eu quam fermentum a tempus nisi aliquet.</h4>
   </section>
 
@@ -249,57 +247,60 @@ v1.0
     </div>
 
     <!-- Menu Listings -->
-    <!-- Marki/Simon: How do I do these dot leaders better? Couldn't find any good code snippets online... -->
-
     <div id="parallax-menu"><!-- wrapper -->
-      <!-- #1 --><div class="parallax-menu-items">
-        <h3>Soft-Boiled Organic Egg</h3>
-        <h4>with 'soldiers'...............................................5.00</h4>
-      </div>
-      <!-- #2 --><div class="parallax-menu-items">
-        <h3>Soft-Boiled Organic Egg</h3>
-        <h4>with 'soldiers'...............................................5.00</h4>
-      </div>
-      <!-- #3 --><div class="parallax-menu-items">
-        <h3>Eggs Any Style</h3>
-        <h4>with homefries &amp; toast....................................16.00</h4>
-      </div>
-      <!-- #4 --><div class="parallax-menu-items">
-        <h3>Eggs Any Style</h3>
-        <h4>with homefries &amp; toast....................................16.00</h4>
-      </div>
-      <!-- #5 --><div class="parallax-menu-items">
-        <h3>Scrambled Eggs in Puff Pastry</h3>
-        <h4>with wild mushrooms and asparagus.............................22.00</h4>
-      </div>
-      <!-- #6 --><div class="parallax-menu-items">
-        <h3>Scrambled Eggs in Puff Pastry</h3>
-        <h4>with wild mushrooms and asparagus.............................22.00</h4>
-      </div>
-      <!-- #7 --><div class="parallax-menu-items">
-        <h3>Eggs Benedict</h3>
-        <h4>with homefries...............................................22.00</h4>
-      </div>
-      <!-- #8 --><div class="parallax-menu-items">
-        <h3>Eggs Benedict</h3>
-        <h4>with homefries...............................................22.00</h4>
-      </div>
-      <!-- #9 --><div class="parallax-menu-items">
-        <h3>Eggs Norwegian</h3>
-        <h4>poached eggs with smoked salmon and hollandaise...............22.00</h4>
-      </div>
-      <!-- #10 --><div class="parallax-menu-items">
-        <h3>Eggs Norwegian</h3>
-        <h4>poached eggs with smoked salmon and hollandaise...............22.00</h4>
+
+      <div class="a">
+        <!-- #1 --><div class="parallax-menu-items">
+          <h3>Soft-Boiled Organic Egg</h3>
+          <h4>with 'soldiers'...........................................................................5.00</h4>
+        </div>
+        <!-- #2 --><div class="parallax-menu-items">
+          <h3>Soft-Boiled Organic Egg</h3>
+          <h4>with 'soldiers'...........................................................................5.00</h4>
+        </div>
+        <!-- #3 --><div class="parallax-menu-items">
+          <h3>Eggs Any Style</h3>
+          <h4>with homefries &amp; toast............................................................16.00</h4>
+        </div>
+        <!-- #4 --><div class="parallax-menu-items">
+          <h3>Eggs Any Style</h3>
+          <h4>with homefries &amp; toast.............................................................16.00</h4>
+        </div>
+        <!-- #5 --><div class="parallax-menu-items">
+          <h3>Scrambled Eggs in Puff Pastry</h3>
+          <h4>with wild mushrooms and asparagus...................................22.00</h4>
+        </div>
       </div>
 
-      <!-- Universal View Details Button -->
-      <a href="#"><div class="button">
-          <img src="img/banner/eye.png" alt="eye" />
-          <p>View Details</p>
-      </div></a>
+      <div class="a">
+        <!-- #6 --><div class="parallax-menu-items">
+          <h3>Scrambled Eggs in Puff Pastry</h3>
+          <h4>with wild mushrooms and asparagus....................................................22.00</h4>
+        </div>
+        <!-- #7 --><div class="parallax-menu-items">
+          <h3>Eggs Benedict</h3>
+          <h4>with homefries........................................................................................22.00</h4>
+        </div>
+        <!-- #8 --><div class="parallax-menu-items">
+          <h3>Eggs Benedict</h3>
+          <h4>with homefries........................................................................................22.00</h4>
+        </div>
+        <!-- #9 --><div class="parallax-menu-items">
+          <h3>Eggs Norwegian</h3>
+          <h4>poached eggs with smoked salmon and hollandaise...........................22.00</h4>
+        </div>
+        <!-- #10 --><div class="parallax-menu-items">
+          <h3>Eggs Norwegian</h3>
+          <h4>poached eggs with smoked salmon and hollandaise...........................22.00</h4>
+        </div>
+      </div>
     </div>
 
+    <!-- Universal View Details Button -->
+    <a href="#"><div class="button">
+        <img src="img/banner/eye.png" alt="eye" width="25" height="20"/>
+        <p>View Details</p>
+    </div></a>
 
   </div>
 </section>
@@ -307,27 +308,27 @@ v1.0
 <!-- Contact Us Section -->
 <section id="contact">
   <div id="contact_wrapper">
-    <div class="contact_logo">
-      <img src="img/contact/logo2.png" alt="logo" width="175" height="130" class="logo_margin"/>
-      <img src="img/contact/soc_icons.png" alt="social media" width="225" height="22" class="logo_margin"/>
+    <div class="logo">
+      <img src="img/contact/logo2.png" alt="logo" width="160" height="128" class="margin"/>
+      <img src="img/contact/soc_icons.png" alt="social media" width="205" height="20" class="margin"/>
     </div>
 
     <!-- contact form detail -->
-    <form id="contact_form" action="#" method="POST">
+    <form id="contact-form" action="#" method="POST">
       <h1><span class="contrast">Contact</span> Us</h1>
-      <div class="contact_form_detail">
+      <div class="detail">
           <!--label for="name"><h4>NAME*</h4></label-->
           <input type="text" name="name" maxlength="60" placeholder="Name&#42;"/>
       </div>
-      <div class="contact_form_detail">
+      <div class="detail">
           <!--label for="email"><h4>EMAIL*</h4></label-->
           <input type="text" name="email" maxlength="100" placeholder="E-mail&#42;"/>
       </div>
-      <div class="contact_form_detail">
+      <div class="detail">
           <!--label for="subject"><h4>SUBJECT</h4></label-->
           <input type="text" name="subject" maxlength="200" placeholder="Subject"/>
       </div>
-      <div class="contact_form_message">
+      <div class="message">
           <!--label for="message">MESSAGE</label-->
           <input id="message" type="text" name="message" maxlength="300" placeholder="Message">
       </div>
@@ -335,7 +336,7 @@ v1.0
     </form>
 
     <!-- location details -->
-    <div id="contact_location">
+    <div id="contact-location">
       <div class="items">
         <img src="img/contact/locationicon.png" alt="map" height="33" width="23" class="margin"/>
         <p>The Gourmet<br />PO Box 21177<br />Little Lonsdale St. Melbourne<br />Victoria 8011 Australia</p>
